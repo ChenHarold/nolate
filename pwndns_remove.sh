@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 chattr -sia /root/.bash_profile
 echo " " > /root/.bash_profile
 echo "# .bash_profile" > /root/.bash_profile

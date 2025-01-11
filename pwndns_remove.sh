@@ -1,32 +1,12 @@
-#!/bin/bash
+#!/usr/bin/bash
 chattr -sia /root/.bash_profile
 echo " " > /root/.bash_profile
-echo "# .bash_profile" > /root/.bash_profile
-echo "# Get the aliases and functions" >> /root/.bash_profile
-echo "if [ -f ~/.bashrc ]; then" >> /root/.bash_profile
-echo "	. ~/.bashrc" >> /root/.bash_profile
-echo "fi" >> /root/.bash_profile
-echo "# User specific environment and startup programs" >> /root/.bash_profile
-echo "PATH=$PATH:$HOME/bin" >> /root/.bash_profile
-echo "export PATH" >> /root/.bash_profile
 chattr -sia /sbin/entpdate
 rm -rf /sbin/entpdate
 chattr -sia /sbin/lntpdate
 rm -rf /sbin/lntpdate
-chattr -sia /sbin/mcrond
-rm -rf /sbin/bcrond
-chattr -sia /sbin/minitd
-rm -rf /sbin/minitd
-chattr -sia /sbin/mcrond
-rm -rf /sbin/mcrond
-chattr -sia /sbin/msysde
-rm -rf /sbin/msysde
-chattr -sia /sbin/msysdl
-rm -rf /sbin/msysdl
 chattr -sia /etc/init.d/pwnrig
 rm -rf /etc/init.d/pwnrig
-chattr -sia /etc/init.d/ntpdate
-rm -rf /etc/init.d/ntpdate
 chattr -sia /etc/cron.hourly/pwnrig
 rm -rf /cron.hourly/pwnrig
 chattr -sia /etc/init.d/ntpdate
@@ -55,12 +35,6 @@ chattr -sia /etc/cron.weekly/pwnrig
 rm -rf /etc/cron.weekly/pwnrig
 chattr -sia /bin/sysdr
 rm -rf /bin/sysdr
-chattr -sia /bin/crondr
-rm -rf /bin/crondr
-chattr -sia /bin/initdr
-rm -rf /bin/initdr
-chattr -sia /bin/bprofr
-rm -rf /bin/bprofr
 systemctl stop pwnrigl.service
 chattr -sia /etc/systemd/system/pwnrigl.service
 chattr -sia /usr/lib/systemd/system/pwnrigl.service
@@ -85,22 +59,6 @@ echo "" > /etc/ld.so.preload
 
 
 
-echo "reboot server after 20 second"
-sleep 20
+echo "reboot server after 10 second"
+sleep 10
 reboot
-
-
-
-
-# .bash_profile
-
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
-fi
-
-# User specific environment and startup programs
-
-PATH=$PATH:$HOME/bin
-
-export PATH

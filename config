@@ -1,0 +1,7 @@
+Host 10.110.99.11
+	HostName 10.110.99.11
+	User root
+	IdentitiesOnly yes
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa
+

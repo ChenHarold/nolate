@@ -12,3 +12,24 @@ Host 10.140.40.89
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_rsa
 
+Host 10.120.51.122
+	HostName 10.120.51.122
+	User root
+	IdentitiesOnly yes
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa
+
+Host 10.120.99.20
+	HostName 10.120.99.20
+	User root
+	IdentitiesOnly yes
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa
+
+Host 10.120.99.20
+	HostName 10.120.99.20
+	User root
+	IdentitiesOnly yes
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/id_rsa
+
